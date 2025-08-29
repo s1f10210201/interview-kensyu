@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>イラスト会話デモ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="headline">ハラスメントについて社員に聞いてみた！</h1>
+  
+  <div class="scene">
+    <div class="avatar-block left">
+      <div class="bubble" id="bubble1" style="display:none;"></div>
+      <div class="avatar" id="avatar1">
+        <img src="avatar1.png" alt="アバター1" />
+        <div class="profile">インタビュアー</div>
+      </div>
+    </div>
+
+    <div class="avatar-block right">
+      <div class="avatar" id="avatar2">
+        <img src="avatar2.png" alt="アバター2" />
+        <div class="profile">ゲスト</div>
+      </div>
+      <div class="bubble" id="bubble2" style="display:none;"></div>
+    </div>
+  </div>
+
+  <div id="ui">
+    <textarea id="script-input" rows="5" cols="40"></textarea>
+    <br>
+    <button onclick="loadYoungInterview()">若年層のインタビュー</button>
+    <button onclick="loadBossInterview()">上層部のインタビュー</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

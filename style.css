@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #eef;
+  background-image: url("1000.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+  background: linear-gradient(to right, #242bed, #2e0efa);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #1397d4, 0 0 10px #1959ef;
+  text-shadow: 2px 2px 4px #000;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+}
+
+#ui {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+}
+
+.scene {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.avatar-block {
+  display: flex;
+  align-items: center;
+  max-width: 45%;
+}
+
+.avatar-block.left {
+  flex-direction: row;
+}
+
+.avatar-block.right {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  text-align: center;
+  width: 200px;
+}
+
+.avatar img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.profile {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.bubble {
+  max-width: 250px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  display: none;
+}
+
+.avatar-block.left {
+  flex-direction: row-reverse; /* アバター1：吹き出しを右側に */
+}
+
+.avatar-block.right {
+  flex-direction: row-reverse;         /* アバター2：吹き出しを左側に */
+}
