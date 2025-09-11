@@ -39,7 +39,7 @@ function loadYoungInterview() {
 function loadBossInterview() {
   stopSpeech();
   document.getElementById("script-input").value = bossInterviewScript.trim();
-  document.querySelector("#avatar2 .profile").textContent = "60代・女性";
+  document.querySelector("#avatar2 .profile").textContent = "40代・女性";
   startDialogue();
 }
 
@@ -126,4 +126,5 @@ function highlightCurrentLine(lineIndex) {
 function stopSpeech() {
   if (timeoutId) clearTimeout(timeoutId);
   speechSynthesis.cancel();
+
 }
